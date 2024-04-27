@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+    <header class="header">
+        <a href="#"class="logo">Portfolio</a>
+        
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </header>
+    <section class="Home"id="home">
+        <div class="home-content">
+            <h3>hi,Myself</h3>
+            <h1>Junaid Amin</h1>
+            <h3>I,m a <span>web developer</span></h3>
+            <p>hello every one </p>
+            <div class=" social-media"id="social-media">
+            <a href="social-media"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="social-media"><i class="fa-brands fa-instagram"></i></a>
+            <a href="social-media"><i class="fa-brands fa-snapchat"></i></a>
+            </div>
+            </div>
+            <div class="home-img"id="img">
+                <img src="fb.jpg">
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about"id="about">
+        <div class="about img">
+            <img src="whatsapp.jpeg">
+            <div class="class about-content">
+                <h2 class="class heading">ABOUT<span>me</span></h2>
+                <h3>web developer</h3>
+                <p>Meet Junaid, a seasoned professional in the realms of web development and Android application development, hailing from the picturesque town of Anantnag, nestled in the serene landscapes of Bijbehara. With a robust expertise honed over years of dedicated work, Junaid has emerged as a go-to name in the tech scene of his locale.
+
+                    Despite starting his journey with an academic background in arts, Junaid's passion for technology led him to pursue O Level certification, where he laid the foundation for his technical prowess. Building upon this academic cornerstone, Junaid delved into the world of web development and Android app creation, demonstrating an innate knack for crafting seamless digital experiences.
+                    As Junaid continues to push the boundaries of what's possible in web and mobile development, his journey serves as an inspiration to budding technologists everywhere, proving that with passion, persistence, and a penchant for learning, anything is achievable in the ever-evolving landscape of technology.</p>
+                
+        
+    </section>
+
+    <section class="services"id="services">
+        <h2 class="class ">My <span>Services"</span></h2>
+        <div class="services-container">
+            <div class=" services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web development</h3>
+                <p>well exprienced in front end development in html,css & javascript</p>
+                <a href="#">read more</a>
+            </div>
+            <div class=" services-box">
+                <i class="fa-brands fa-android"></i></i>
+                <h3>Android development</h3>
+                <p>well exprienced in Android development using Python,Java and flutter</p>
+                <a href="#">read more</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python development</h3>
+                <p>well exprienced in Python</p>
+                <a href="#">read more</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact"id="contact">
+        <h2 class="heading">Contact<span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text"placeholder="Full Name">
+                <input type="text"placeholder="Email">
+                </div>
+
+            <div class="input-box">
+            <input type="num"placeholder="Mobile Number">
+            <input type="text"placeholder="Email Subject">
+        </div>
+
+                <textarea name=""id=""cols="20"rows="3"placeholder="Your Message"></textarea>
+                <input type="submit"value="send Message" class="btn">
+        </form>
+    </section>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,700&display=swap');
+
+
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            scroll-behavior: smooth;
+            font-family: nunito , sans-serif;
+        }
+        :root{
+        --bg-color:rgb(11, 11, 51);
+        --snd-bg-color:rgb(40, 40, 65);
+        --text-color:#fff;
+        --main-color : #5982f4;
+        }
+        html{
+            font-size: 62.5%;
+            overflow: hidden;
+        }
+        body{
+            background: var(--bg-color);
+            color:var(--text-color);
+        }
+        section{
+            --main-height:90vh;
+            padding: 10rem 9% 2rem;
+        }
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding:2rem 9% ;
+            background: var(--bg-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        .logo{
+            font-size: 2.5rem;
+            color: var(--text-color);
+            font-weight: 700;
+            cursor: default;
+        }
+        .navbar a{
+            font-size: 1.5rem;
+            color: var(--text-color);
+            margin-left: 4rem;
+            font-weight: 700;
+
+        }
+        .navbar a:hover,
+        .navbar a:active{
+            color: var(--text-color);
+        }
+        #menu-icon{
+            font-size: 7.6rem;
+            color: var(--text-color);
+            display:none;
+        }
+        .home{
+            display:flex ;
+            justify-content: center;
+            align-items: center;
+        }
+        .home-content h3{
+            font-size: 3.2rem;
+            font-weight: 700;
+        }
+        .home-content h3:nth-of-type(2){
+            margin-bottom: 2rem;
+        }
+        span{
+            color: var(--main-color);
+        }
+        .home-content h1{
+            font-size: 5.6rem;
+            font-weight: 700;
+            line-height: 1.3;
+
+        }
+        .home-img img{
+            width: 20vw;
+            animation:floatImage 4s ease-in-out infinite;
+            border-radius: 100%;
+            
+        }
+        @keyframes floatImage{
+            0%{
+                transform: translateY(0);
+
+            }
+            50%{
+                transform: translateY(-2.4rem);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+        .home-content p{
+            font-size: 1.6rem;
+        }
+        .social-media a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width:4rem;
+            height: 4rem;
+            background: transparent;
+            border: .2rem solid var(--main-color);
+            border-radius: 50%;
+            font-size: 2rem;
+            color: var(--main-color);
+            margin: 3rem 1.5rem 3rem 0;
+            transition: 5s ease;
+        }
+        .social-media a :hover{
+            background: var(--main-color);
+            color: var(--snd-bg-color);
+            box-shadow: 0 0 2rem var(--main-color);
+        }
+        .about{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            background: var(--snd-bg-color);
+
+        }
+        .about-img img{
+            width: 20vw;
+
+        }
+        .heading{
+            text-align: center;
+            font-size: 4.5rem;
+        }
+        .home-content h2{
+            text-align: left;
+            line-height: 1.2;
+        }
+        .home-content h3{
+            font-size: 2.6rem;
+        }
+        .home-content p {
+            font-size: 5.6rem;
+            margin: 2rem 0 3rem;
+        }
+        .services h2 {
+            margin-bottom: 5rem;
+        }
+        .services-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap:2rem ;
+        }
+        .services-container .services-box {
+            flex: 1 1 30rem;
+            background:var(--snd-bg-color) ;
+            padding: 3rem 2rem 4rem;
+            border-radius: 2rem;
+            text-align: center;
+            border: 2rem var(--bg-color);
+            transition: 2s ease;
+
+        }
+        .services-container .services-box:hover {
+            font-size: 7rem;
+            color: var(--main-color);
+        }
+        .services-box h3 {
+            font-size: 2.6rem;
+        }
+        .services-box p {
+            font-size: 1.6rem;
+            margin: 1rem 0 3rem;
+        }
+        .services-box i{
+            font-size: 7rem;
+            color: var(--main-color);
+        }
+        .contact h2{
+            margin-bottom: 3rem;
+        }
+        .contact form{
+            max-width: 70rem;
+            margin: 1rem auto;
+            text-align: center;
+            margin-bottom: 3rem;
+
+        }
+        .contact form .input-box{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .contact form .input-box input,
+        .contact form textarea{
+            width: 100%;
+            padding: 1.5rem;
+            font-size: 1.6rem;
+            color: var(--text-color);
+            background: var(--snd-bg-color);
+            border-radius: .8rem;
+            margin: 5rem 0;
+        }
+        .contact form .input-box input{
+            width: 49%;
+        }
+        .contact form textarea{
+            resize: none;
+        }
+        .contact form .btn{
+            margin-top:2rem;
+            cursor: pointer;
+        }
+    </style>
+</html>
